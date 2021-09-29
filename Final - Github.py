@@ -534,8 +534,6 @@ model.fit(
     verbose=True, 
     early_stopping_rounds = 20)
 
-rcParams['figure.figsize'] = 12, 4
-
 Y_pred = model.predict(X_valid).clip(0, 20)
 Y_test = model.predict(X_test).clip(0, 20)
 
