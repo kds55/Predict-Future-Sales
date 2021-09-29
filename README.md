@@ -12,8 +12,8 @@ Contents:
 
 Competition/goal 
 -------------------------
-Goal: To predict the number of units sold of certain item ID's per shop for 1 month after our data (date block 34 or Nov 2015)
-For general description of data and the competition see: https://www.kaggle.com/c/competitive-data-science-predict-future-sales/overview
+- Goal: To predict the number of units sold of certain item ID's per shop for 1 month after our data (date block 34 or Nov 2015)
+- For general description of data and the competition see: https://www.kaggle.com/c/competitive-data-science-predict-future-sales/overview
 
 EDA
 -------------------------
@@ -47,9 +47,9 @@ The below lag features were added. The numbers in brackets represent the lags us
 Final Model
 -------------------------
 A XGBM model was used as it will be able to handle the multiple inputs well. I tried my best to stop the model from overfitting but it appeared to be something I still need to tweak as my training data was much stronger fit then my test data. See below for results:
-Training data (prior to date block 33) - 0.64698 RMSE
-Test data (date block 33) - 0.81820 RMSE
-Final prediction to actual (date block 34)- 1.00537 RMSE (5,587/12,589 or top 44.38% at the time of this being posted)
+- Training data (prior to date block 33) - 0.64698 RMSE
+- Test data (date block 33) - 0.81820 RMSE
+- Final prediction to actual (date block 34)- 1.00537 RMSE (5,587/12,589 or top 44.38% at the time of this being posted)
 
 As you can see I was able to achieve a significantly lower RMSE on the training data showing my model was likely over fitted. The only thing odd is that the model did not take long to run as it only took 88 iterations to finish which seemed fairly quick given the amount of data. It did however start getting small performance gains on the test data after the first 16-20 iterations, which at this point the training data RMSE was around 0.75. I beleive my model can acheive a much better result with some tweaking. 
 
