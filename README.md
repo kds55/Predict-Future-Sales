@@ -3,14 +3,20 @@ Predict-Future-Sales
 
 
 Contents:
-- Competition/goal 
+- Repository Summary
+- Competition/Goal 
 - EDA
 - Features Added
 - Final Model
 - Other Features Tried
 - Things to Consider
 
-Competition/goal 
+Repository Summary
+-------------------------
+- See "EDA & Model.py" for EDA and modeling done in python
+- See "Data Visulization - Client Dashboard - PowerBi.pbix" for a example PowerBi dashboard I create that would provide valuable reporting to the client
+
+Competition/Goal 
 -------------------------
 - Goal: To predict the number of units sold of certain item ID's per shop for 1 month after our data (date block 34 or Nov 2015)
 - For general description of data and the competition see: https://www.kaggle.com/c/competitive-data-science-predict-future-sales/overview
